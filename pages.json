@@ -1,0 +1,53 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"aliasPath": "/",
+			"name": "Index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path":"pages/index/sysinfo",
+			"aliasPath": "/sysinfo",
+			"name": "SysInfo"
+		},
+		{
+			"path": "pages/error/404",
+			"aliasPath": "/404",
+			"name": "404"
+		},
+		{
+			"path": "pages/index/login",
+			"aliasPath": "/login",
+			"name": "Login",
+			"style": {
+				"navigationBarTitleText": "login"
+			}
+		},
+		{
+			"path": "pages/news/detail",
+			"aliasPath": "/news/:id",
+			"name": "NewsDetail"
+		},
+		{
+			"path":"pages/template/1",
+			"aliasPath": "template1",
+			"name": "Template1",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
